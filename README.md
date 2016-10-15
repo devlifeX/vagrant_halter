@@ -13,7 +13,7 @@ Then, simply write ``vagrant_halter`` in your terminal
 
 You can use this:
 ```bash
-echo "alias sf='vh && poweroff -f'" >> ~/.bashrc
+echo "alias sf='vh && sudo poweroff -f'" >> ~/.bashrc
 source ~/.bashrc
 ```
 for alias poweroff force, then use
