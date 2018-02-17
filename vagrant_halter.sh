@@ -48,13 +48,5 @@ if [ "$VAGRANT" == "" ]; then
  print "bye, have good day ;)" $GREEN;
  exit
 else
-  read -p "Are you sure? [y/n]" -n 1 -r
-  echo   
-  if [[ $REPLY =~ ^[Yy]$ ]]
-    then
-    vagrant_halter "$VAGRANT"
-  else
-    print "You abort operation!" $RED;
-    exit
-  fi
+ vagrant_halter "$VAGRANT"
 fi
